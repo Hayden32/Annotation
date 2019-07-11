@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF27972522D7EFBD00EE6F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27972422D7EFBD00EE6F52 /* AppDelegate.swift */; };
-		EF27972722D7EFBD00EE6F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27972622D7EFBD00EE6F52 /* ViewController.swift */; };
 		EF27972A22D7EFBD00EE6F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF27972822D7EFBD00EE6F52 /* Main.storyboard */; };
 		EF27972C22D7EFBD00EE6F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF27972B22D7EFBD00EE6F52 /* Assets.xcassets */; };
 		EF27972F22D7EFBD00EE6F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF27972D22D7EFBD00EE6F52 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		EF27972122D7EFBD00EE6F52 /* Annotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF27972422D7EFBD00EE6F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF27972622D7EFBD00EE6F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF27972922D7EFBD00EE6F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF27972B22D7EFBD00EE6F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF27972E22D7EFBD00EE6F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +37,7 @@
 			isa = PBXGroup;
 			children = (
 				EF27972322D7EFBD00EE6F52 /* Annotation */,
+				EF27973722D7F0D500EE6F52 /* Resources */,
 				EF27972222D7EFBD00EE6F52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +53,52 @@
 		EF27972322D7EFBD00EE6F52 /* Annotation */ = {
 			isa = PBXGroup;
 			children = (
-				EF27972422D7EFBD00EE6F52 /* AppDelegate.swift */,
-				EF27972622D7EFBD00EE6F52 /* ViewController.swift */,
-				EF27972822D7EFBD00EE6F52 /* Main.storyboard */,
-				EF27972B22D7EFBD00EE6F52 /* Assets.xcassets */,
-				EF27972D22D7EFBD00EE6F52 /* LaunchScreen.storyboard */,
-				EF27973022D7EFBD00EE6F52 /* Info.plist */,
+				EF27973822D7F0F100EE6F52 /* Model */,
+				EF27973922D7F0FA00EE6F52 /* ModelController */,
+				EF27973A22D7F10200EE6F52 /* View Controllers */,
+				EF27973622D7F0C100EE6F52 /* Storyboard */,
 			);
 			path = Annotation;
+			sourceTree = "<group>";
+		};
+		EF27973622D7F0C100EE6F52 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EF27972822D7EFBD00EE6F52 /* Main.storyboard */,
+				EF27972D22D7EFBD00EE6F52 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EF27973722D7F0D500EE6F52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF27972422D7EFBD00EE6F52 /* AppDelegate.swift */,
+				EF27972B22D7EFBD00EE6F52 /* Assets.xcassets */,
+				EF27973022D7EFBD00EE6F52 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF27973822D7F0F100EE6F52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF27973922D7F0FA00EE6F52 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		EF27973A22D7F10200EE6F52 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF27972722D7EFBD00EE6F52 /* ViewController.swift in Sources */,
 				EF27972522D7EFBD00EE6F52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V775U4648;
-				INFOPLIST_FILE = Annotation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V775U4648;
-				INFOPLIST_FILE = Annotation/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
