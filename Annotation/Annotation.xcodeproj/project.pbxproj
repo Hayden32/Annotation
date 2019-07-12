@@ -13,6 +13,8 @@
 		EF27972F22D7EFBD00EE6F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF27972D22D7EFBD00EE6F52 /* LaunchScreen.storyboard */; };
 		EF27973C22D8001A00EE6F52 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27973B22D8001A00EE6F52 /* Experience.swift */; };
 		EF27973E22D80CCC00EE6F52 /* ExperienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27973D22D80CCC00EE6F52 /* ExperienceController.swift */; };
+		EF27974022D80E4100EE6F52 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27973F22D80E4100EE6F52 /* MapViewController.swift */; };
+		EF27974322D80F2B00EE6F52 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27974222D80F2B00EE6F52 /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EF27973022D7EFBD00EE6F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF27973B22D8001A00EE6F52 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		EF27973D22D80CCC00EE6F52 /* ExperienceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceController.swift; sourceTree = "<group>"; };
+		EF27973F22D80E4100EE6F52 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EF27974222D80F2B00EE6F52 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				EF27972322D7EFBD00EE6F52 /* Annotation */,
+				EF27974122D80F0F00EE6F52 /* Helpers */,
 				EF27973722D7F0D500EE6F52 /* Resources */,
 				EF27972222D7EFBD00EE6F52 /* Products */,
 			);
@@ -103,8 +108,17 @@
 		EF27973A22D7F10200EE6F52 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF27973F22D80E4100EE6F52 /* MapViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EF27974122D80F0F00EE6F52 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF27974222D80F2B00EE6F52 /* LocationHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,8 @@
 				EF27973E22D80CCC00EE6F52 /* ExperienceController.swift in Sources */,
 				EF27972522D7EFBD00EE6F52 /* AppDelegate.swift in Sources */,
 				EF27973C22D8001A00EE6F52 /* Experience.swift in Sources */,
+				EF27974022D80E4100EE6F52 /* MapViewController.swift in Sources */,
+				EF27974322D80F2B00EE6F52 /* LocationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
