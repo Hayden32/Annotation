@@ -56,7 +56,7 @@
         <!--Add Experience-->
         <scene sceneID="AR6-P7-0wD">
             <objects>
-                <viewController id="GA8-sP-7EI" sceneMemberID="viewController">
+                <viewController id="GA8-sP-7EI" customClass="ExperienceViewController" customModule="Annotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Thg-BY-deT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,14 +79,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd3-XH-paA">
                                         <rect key="frame" x="0.0" y="444" width="398" height="30"/>
                                         <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="addImageButtonTapped:" destination="GA8-sP-7EI" eventType="touchUpInside" id="6Uu-n6-xfs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbl-Bb-Fp7">
                                         <rect key="frame" x="0.0" y="482" width="398" height="30"/>
                                         <state key="normal" title="Record Audio"/>
+                                        <connections>
+                                            <action selector="recordAudioButtonTapped:" destination="GA8-sP-7EI" eventType="touchUpInside" id="lrS-7s-x00"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdK-XQ-XjP">
                                         <rect key="frame" x="0.0" y="520" width="398" height="30"/>
                                         <state key="normal" title="Play Audio Recording"/>
+                                        <connections>
+                                            <action selector="playAudioRecordingButtonTapped:" destination="GA8-sP-7EI" eventType="touchUpInside" id="at7-od-DVp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -102,10 +111,17 @@
                     <navigationItem key="navigationItem" title="Add Experience" id="GnV-AV-xk5">
                         <barButtonItem key="rightBarButtonItem" title="Add Video" id="ruU-fd-O0t">
                             <connections>
+                                <action selector="addVideoButtonTapped:" destination="GA8-sP-7EI" id="gf2-6L-tyc"/>
                                 <segue destination="Sm0-J6-Sac" kind="show" identifier="toVideoVC" id="a1Q-Mi-sWe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="uan-Fr-OY1" id="CEn-FV-GlR"/>
+                        <outlet property="playAudioButton" destination="LdK-XQ-XjP" id="FOS-Pa-toG"/>
+                        <outlet property="recordAudioButton" destination="Nbl-Bb-Fp7" id="0bJ-3x-PUb"/>
+                        <outlet property="titleTextField" destination="aSG-7x-dBT" id="tcZ-Ge-diA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqI-Ub-cC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

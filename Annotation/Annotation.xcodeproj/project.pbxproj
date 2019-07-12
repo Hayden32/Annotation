@@ -15,6 +15,8 @@
 		EF27973E22D80CCC00EE6F52 /* ExperienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27973D22D80CCC00EE6F52 /* ExperienceController.swift */; };
 		EF27974022D80E4100EE6F52 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27973F22D80E4100EE6F52 /* MapViewController.swift */; };
 		EF27974322D80F2B00EE6F52 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27974222D80F2B00EE6F52 /* LocationHelper.swift */; };
+		EF27974522D8134600EE6F52 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27974422D8134600EE6F52 /* ExperienceViewController.swift */; };
+		EF27974722D81E5700EE6F52 /* VideoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27974622D81E5700EE6F52 /* VideoRecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EF27973D22D80CCC00EE6F52 /* ExperienceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceController.swift; sourceTree = "<group>"; };
 		EF27973F22D80E4100EE6F52 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EF27974222D80F2B00EE6F52 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		EF27974422D8134600EE6F52 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		EF27974622D81E5700EE6F52 /* VideoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				EF27973F22D80E4100EE6F52 /* MapViewController.swift */,
+				EF27974422D8134600EE6F52 /* ExperienceViewController.swift */,
+				EF27974622D81E5700EE6F52 /* VideoRecordingViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -192,11 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF27974522D8134600EE6F52 /* ExperienceViewController.swift in Sources */,
 				EF27973E22D80CCC00EE6F52 /* ExperienceController.swift in Sources */,
 				EF27972522D7EFBD00EE6F52 /* AppDelegate.swift in Sources */,
 				EF27973C22D8001A00EE6F52 /* Experience.swift in Sources */,
 				EF27974022D80E4100EE6F52 /* MapViewController.swift in Sources */,
 				EF27974322D80F2B00EE6F52 /* LocationHelper.swift in Sources */,
+				EF27974722D81E5700EE6F52 /* VideoRecordingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
